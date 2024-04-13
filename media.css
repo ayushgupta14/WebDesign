@@ -1,0 +1,138 @@
+@media (max-width: 420px) {
+
+    section {
+        padding: 6rem 2rem;
+    }
+
+    /* .navbar {
+        display: none;
+    } */
+
+    #toggle-text {
+        display: none;
+    }
+
+    .toggle-btn {
+        width: 70px;
+        height: 36px;
+    }
+
+    .toggle-btn img {
+        margin-left: 0px;
+    }
+
+    .homecontent h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .homecontent h3 {
+        font-size: 19px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    /* .about-content h2 {
+        text-align: center;
+        line-height: 1.2;
+    }
+     */
+    .about-content h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        /* margin: 2rem 0 3rem; */
+        margin-bottom: 15px;
+        line-height: 24px;
+    }
+
+    .services h2 {
+        /* margin-bottom: 3rem; */
+        font-size: 40px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-container .services-box {
+        flex: 1 1 24rem;
+    }
+
+    .portfolio h2 {
+        font-size: 40px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .portfolio .banner h3 {
+        margin-top: 85px;
+        font-size: 20px;
+    }
+
+    .portfolio .banner span {
+        font-size: 25px;
+    }
+
+    .contact h2 {
+        font-size: 40px;
+    }
+
+    .form-box {
+        width: 350px;
+    }
+
+    .inputbox {
+        width: 350px;
+    }
+
+    .inputbox label {
+        font-size: 15px;
+    }
+
+    .contact form textarea {
+        width: 350px;
+    }
+
+    .inputbox ion-icon {
+        font-size: 23px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    .footer-icon a {
+        padding: 8px;
+    }
+
+    .footer-icon a i {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    #toggle-text {
+        display: none;
+    }
+
+    .toggle-btn {
+        width: 70px;
+        height: 36px;
+    }
+
+    .toggle-btn img {
+        margin-left: 0px;
+    }
+}

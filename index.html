@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdecaf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Q6UdecFnH1MezQ0DY");
+        })();
+    </script>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: none;
+                text-align: center;
+            }
+        }
+
+        .navbar .icon {
+            display: none;
+            float: right;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar .icon {
+                display: block;
+                cursor: pointer;
+                position: relative;
+                right: 25px;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive .icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .navbar.responsive a {
+                /* float: none; */
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#home" class="logo">Web<span class="">Decaf.</span></a>
+
+        <div class="navigation">
+            <nav class="navbar" id="NavbarId">
+                <a href="#home" style="--i:1;" class="active nav-link">Home</a>
+                <a href="#about" style="--i:2;" class="nav-link">About</a>
+                <a href="#services" style="--i:3;" class="nav-link">Services</a>
+                <a href="#portfolio" style="--i:4;" class="nav-link">PortFolio</a>
+                <a href="#contact" style="--i:5;" class="nav-link">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-bars"></i> 
+                </a>
+            </nav>
+
+            <div class="toggle-btn" id="toggle-btn">
+                <h4 id="toggle-text">Light</h4>
+                <img src="imgs/sun.png" id="toggle-icon" alt="">
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="homecontent">
+            <h3>Hey! It's Us </h3>
+            <h1>Web<span>Decaf</span></h1>
+            <h3>And We will help your business with<br><span class="multywords"></span></h3>
+            <p>"Crafting Digital Excellence with Modern Innovation"</p>
+            <div class="socialmedia">
+                <a href="https://github.com/ayushgupta14" target="_blank" style="--i:7"><i
+                        class='bx bxl-github'></i></a>
+                <a href="https://twitter.com/AyushGupta202" target="_blank" style="--i:8"><i
+                        class='bx bxl-twitter'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/ayush-gupta1412/" target="_blank" style="--i:10"><i
+                        class='bx bxl-linkedin'></i></a>
+            </div>
+            <div class="hire">
+                <a href="#contact" class="btn">Learn More</a>
+            </div>
+            <!-- <a href="#contact" class="btn">hire Us</a> -->
+        </div>
+
+
+    </section>
+    <!-- <div class="home-image">
+        <img src="imgs/port1.jpg" alt="">
+    </div> -->
+
+    <!-- about section -->
+
+    <section class="about" id="about">
+        <!-- <div class="about-img">
+            <img src="imgs/port1.jpg" alt="">
+        </div> -->
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Us</span></h2>
+            <h3>We're <span class="multywords">Developers</span></h3>
+            <p>WebDeCaf is a dynamic startup specializing in cutting-edge web development services. We blend creativity
+                and technology to craft exceptional digital experiences for businesses and individuals. Our passionate
+                team leverages modern tech tools to design responsive websites, develop robust web applications, and
+                optimize online presence through SEO. With a commitment to quality, transparency, and client
+                satisfaction, WebDeCaf is your trusted partner in shaping the digital future. Join us on this journey
+                where innovation flows as smoothly as your favorite cup of coffee.</p>
+            <div class="hire">
+                <a href="About/about.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- services section -->
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div id="service-box1" class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>Development of all types of modern websites from scratch.</p>
+                <div class="more_det" id="more_det">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Repudiandae, magnam. Quis dolore quidem ex quo laborum nihil, error numquam quos fuga ipsam?
+                    Corporis tempora aspernatur velit possimus quas? Similique, consectetur!</div>
+                <div>
+                    <button id="flipbtn-1" class="btn">Read More</button>
+                    <button id="unflipbtn-1" class="btn">Read Less</button>
+                </div>
+            </div>
+
+            <div id="service-box2" class="services-box">
+                <i class="bx bx-code-curly"></i>
+                <h3>Web Management</h3>
+                <p>Management of all complicated websites that need constant debugging.</p>
+                <div class="more_det" id="more_det">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Repudiandae, magnam. Quis dolore quidem ex quo laborum nihil, error numquam quos fuga ipsam?
+                    Corporis tempora aspernatur velit possimus quas? Similique, consectetur!</div>
+                <div>
+                    <button id="flipbtn-1" class="btn">Read More</button>
+                    <button id="unflipbtn-1" class="btn">Read Less</button>
+                </div>
+            </div>
+
+            <div id="service-box2" class="services-box">
+                <i class="bx bx-code-block"></i>
+                <h3>App Development</h3>
+                <p>Design and Development of different types of apps for your businesses.</p>
+                <div class="more_det" id="more_det">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Repudiandae, magnam. Quis dolore quidem ex quo laborum nihil, error numquam quos fuga ipsam?
+                    Corporis tempora aspernatur velit possimus quas? Similique, consectetur!</div>
+                <div>
+                    <button id="flipbtn-1" class="btn">Read More</button>
+                    <button id="unflipbtn-1" class="btn">Read Less</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- PortFolio section -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="imgs/bist.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web design of "Bistro: the raod side cafe", a cafe located at nehru nagar, bhilai.</p>
+                    <a href="http://bistrotheroadsidecafe.com/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="imgs/pristine.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web design of "Pristine Properties", an ecommerce website design.</p>
+                    <a href="http://techtaraa.online/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="imgs/baybridge.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web design of "Baybridge", an ecommerce website design.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <!-- <div class="portfolio-box">
+                <img src="imgs/webdecaf.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web design of "WebDeCaf", our own website design for the startup.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="imgs/cover.webp" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web design of a photographer.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="imgs/blogit.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Web design of "Blog IT", a blog posting website.</p>
+                    <a href="https://itblg.netlify.app/"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="banner">
+            <h3>Get your own website <a href="#contact"><span class="bannerword"></span></a></h3>
+        </div>
+    </section>
+
+
+    <!-- contact section -->
+
+    <section class="contact newcon" id="contact">
+        <h2 class="heading">
+            Contact <span>Us!</span>
+        </h2>
+
+        <form class="form-contact">
+            <div class="form-box">
+                <div class="form-value">
+                    <div class="inputbox">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <input id="name" type="text" required>
+                        <label for="">Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input id="number" type="text" required>
+                        <label for="">Contact Number</label>
+                    </div>
+
+                    <textarea id="subject" rows="5" placeholder="Your Message"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="submitbtn" class="btn" onclick="sendMail()">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright and &copy; 2023 | All rights reserved.</p>
+        </div>
+
+        <div class="footer-icon">
+            <a href="#home"><i class="bx bx-chevrons-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
